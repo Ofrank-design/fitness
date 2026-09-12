@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Consultation — Apex Coaching</title>
+<meta name="description" content="Book a free consultation to get started with strength and conditioning coaching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">APEX <span>COACHING</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn btn-primary">Book a consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="hero-kicker">Book a consultation</div>
+      <h1>Tell us about your goals. We'll take it from there.</h1>
+      <p>This isn't a sales call — it's a short conversation to confirm coaching is the right fit before you commit to anything.</p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="wrap" style="max-width:720px;">
+      <form data-validate novalidate>
+        <div class="form-fields">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="b-first">First name</label>
+              <input type="text" id="b-first" name="firstName" required>
+              <span class="field-error">Please enter your first name.</span>
+            </div>
+            <div class="form-field">
+              <label for="b-last">Last name</label>
+              <input type="text" id="b-last" name="lastName" required>
+              <span class="field-error">Please enter your last name.</span>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="b-email">Email</label>
+              <input type="email" id="b-email" name="email" required>
+              <span class="field-error">Please enter a valid email.</span>
+            </div>
+            <div class="form-field">
+              <label for="b-phone">Phone</label>
+              <input type="tel" id="b-phone" name="phone" required>
+              <span class="field-error">Please enter a phone number.</span>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="b-goal">Primary goal</label>
+              <select id="b-goal" name="goal" required>
+                <option value="">Select a goal</option>
+                <option>Lose fat</option>
+                <option>Build muscle</option>
+                <option>Improve performance</option>
+                <option>Build sustainable habits</option>
+              </select>
+              <span class="field-error">Please select a goal.</span>
+            </div>
+            <div class="form-field">
+              <label for="b-experience">Training experience</label>
+              <select id="b-experience" name="experience" required>
+                <option value="">Select experience level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+              <span class="field-error">Please select your experience level.</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="b-coaching">Preferred coaching tier</label>
+            <select id="b-coaching" name="coaching" required>
+              <option value="">Select a tier</option>
+              <option>Starter — $99/month</option>
+              <option>Transformation — $199/month</option>
+              <option>Elite 1:1 — $399/month</option>
+              <option>Not sure yet</option>
+            </select>
+            <span class="field-error">Please select a coaching tier.</span>
+          </div>
+          <div class="form-field">
+            <label for="b-message">Anything else we should know?</label>
+            <textarea id="b-message" name="message" placeholder="Injuries, schedule constraints, past training history, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Book consultation</button>
+        </div>
+      </form>
+      <div class="form-success">
+        <strong>Thanks! Your consultation request has been received.</strong>
+        <p>We'll reach out within one business day to schedule your call.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">APEX <span>COACHING</span></div>
+        <p>Strength and conditioning coaching for people who train hard between meetings.</p>
+        <div class="social-row">
+          <a href="#" class="social-icon" aria-label="Apex Coaching on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Apex Coaching on X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Apex Coaching on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 8.75h2.25V5.5h-2.25c-2.35 0-3.75 1.42-3.75 3.75v1.75H8.5v3h2.25V21h3v-6.75h2.35l.4-3h-2.75V9.5c0-.5.2-.75.75-.75Z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Apex Coaching on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="M10.3 9.6l5 2.4-5 2.4z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Coaching</h4>
+        <ul>
+          <li><a href="programs.html">Online coaching</a></li>
+          <li><a href="programs.html">1:1 training</a></li>
+          <li><a href="programs.html">Nutrition coaching</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@apexcoaching.com">hello@apexcoaching.com</a></li>
+          <li><a href="tel:+15550192834">(555) 019-2834</a></li>
+          <li><a href="contact.html">Contact form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Apex Coaching. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
